@@ -1,0 +1,183 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f7fa;
+    font-family: Montserrat, "sans-serif";
+    color: #51565d;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.calendar-container {
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+.calendar-header {
+    text-align: center;
+    padding: 20px 0;
+    background: #333333;
+    color: #fff;
+}
+
+.calendar-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.day-names {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.day-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.clearfix {
+display: flex;
+flex-wrap: wrap;
+gap: -10px; /* Adjust spacing between months */
+}
+
+.day {
+display: flex;
+justify-content: flex-start; /* Align the content to the right */
+align-items: right;
+font-size: 18px;
+border-bottom: 1px solid rgba(146, 148, 159, 0.12);
+border-right: 1px solid rgba(146, 148, 159, 0.12);
+text-align: left; /* Align text within the cell to the right */
+padding: 5px 10px;
+letter-spacing: 1px;
+font-size: 12px;
+box-sizing: border-box;
+color: #878787;
+}
+
+.event-date {
+background-color:#0d6efd;
+color: #FFFFFF
+}
+
+.event-text {
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;	
+
+}
+
+.event-text-red {
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;	
+
+}
+
+
+.year-header {
+text-align: center;
+padding: 20px 0;
+background-color: 0d6efd;
+    
+}
+.year-header h1 {
+margin: 0;
+font-size: 50px;
+color: #0d6efd;	
+}
+
+@media screen and (max-width: 768px) {
+    .calendar-container {
+        width: 100%;
+    }
+
+    .calendar-header h1 {
+        font-size: 24px;
+    }
+
+    .day-name {
+        font-size: 14px;
+    }
+
+    .day {
+        font-size: 16px;
+    }
+    
+    .event-text {
+        font-size: 8px;
+        text-align: center;
+
+    }
+    .event-text-red {
+          font-size: 8px;
+        text-align: center;
+
+    }
+      
+      
+}
+
+
+ @media screen and (max-width: 1600px) {
+    .calendar-container {
+    width: 100%
+    }
+
+    .calendar-header h1 {
+        font-size: 24px;
+    }
+
+    .day-name {
+        font-size: 14px;
+    }
+
+    .day {
+        font-size: 16px;
+    }
+    
+    .event-text {
+        font-size: 16px;
+        text-align: center;
+
+    }
+    .event-text-red {
+          font-size: 16px;
+       text-align: center;
+
+    }
+      
+      
+}
